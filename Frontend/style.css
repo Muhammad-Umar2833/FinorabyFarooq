@@ -1,4 +1,4 @@
-* {
+ * {
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -17,8 +17,9 @@ body {
 .sidebar{
     width: 220px;
     background-color:#CFBB99 ;
+    padding: 20px;
 }
-
+ 
 .sidebar h2{
     margin-bottom: 30px;
 }
@@ -41,7 +42,7 @@ body {
     display:flex;
     gap: 20px;
     margin-top: 20px;
-}
+} 
 
 .card{
     background-color: rgb(232, 232, 202);
@@ -80,7 +81,7 @@ body {
    margin-bottom: 15px;
 }
 
-.section ul{
+.section-box ul{
     list-style: none;
 } 
 
@@ -107,7 +108,30 @@ form input{
 
 form button{
     padding: 10px 20px;
-    font-style: white;
+    color: white;
     border: none;
     background-color: #1e293b;
+}  
+
+@media (max-width: 768px){
+    .container{
+        flex-direction: column;
+    } 
+
+    .sidebar{
+        width:100%;
+        text-align: center;
+    }
+    .cards{
+        flex-direction: column;
+    } 
+
+    .dashboard-sections{
+        flex-direction: column;
+    }
+
+    form{
+        flex-direction: column
+        ;
+    }
 } 
